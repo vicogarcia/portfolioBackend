@@ -6,9 +6,7 @@
 package com.portfolioweb.gv.controller;
 
 import com.portfolioweb.gv.dto.dtoEducacion;
-import com.portfolioweb.gv.dto.dtoExperiencia;
 import com.portfolioweb.gv.model.Educacion;
-import com.portfolioweb.gv.model.Experiencia;
 import com.portfolioweb.gv.security.controller.Mensaje;
 import com.portfolioweb.gv.service.EducacionService;
 import java.util.List;
@@ -32,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfolioftd.web.app")
 public class EducacionController {
     @Autowired
     EducacionService educacionService;
