@@ -31,8 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins = "https://portfolioftd.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfolioftd.web.app")
 public class EducacionController {
     @Autowired
     EducacionService educacionService;
@@ -92,7 +92,7 @@ public class EducacionController {
         educacion.setInstitucion(dtoedu.getInstitucion());
         educacion.setUbicacion((dtoedu.getUbicacion()));
         educacion.setImagen(dtoedu.getImagen());
-        educacion.setFechaInicio(dtoedu.getFechaFin());
+        educacion.setFechaInicio(dtoedu.getFechaInicio());
         educacion.setFechaFin(dtoedu.getFechaFin());
         
         educacionService.save(educacion);
